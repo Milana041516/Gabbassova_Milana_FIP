@@ -1,0 +1,658 @@
+ /* 1. ---General Styles--- */
+
+ #mobile-outline {
+    outline: 20px solid #333;
+    max-width: 412px;
+    margin: 20px auto 20px auto;
+    border-radius: 10px;
+ } 
+ 
+ body {
+    color: #626262;
+    font-family: 'Sanchez', 'Times New Roman', serif;
+ }
+ 
+ a {
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+ }
+ 
+ input, textarea {
+    display: block;
+    margin: 0;
+    padding: 0;
+ }
+ 
+ .cr-red {
+    color: #9a2018;
+ }
+
+ /* 2. ---Main Nav--- */
+
+ #main-nav label img {
+    width: 20px;
+    height: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: all .5s ease;
+    margin-bottom: 20px; 
+ } 
+ 
+ #main-nav input, #burger-con {
+    display: none;
+ }
+
+ #burger-con ul li a:hover {
+   color: #9a2018;
+ }
+ 
+ 
+ /*   ~ sibling selector   */
+ 
+ 
+ #main-nav input:checked ~ #burger-con {
+    display: block;
+ }
+ 
+ #main-nav input:checked ~ label img {
+    transform: rotate(90deg);
+ }
+ 
+ #main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+ }
+ 
+ #main-nav ul li a {
+    display: block;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: #626262;
+ }
+ 
+ #main-nav ul li {
+    border-bottom: 1px solid #efefef;
+ }
+ 
+ 
+ 
+ #main-nav ul li:first-child {
+    border-top: 1px solid #efefef;
+ }
+ 
+ #main-nav ul li:last-child {
+    margin-bottom: 10px;
+ } 
+ 
+ 
+ 
+ #logo {
+    margin-bottom: 20px;
+    max-width: 382px;
+ }
+
+
+ /* 3. ---Main Hero Image--- */
+
+#hero {
+    background: url(../images/hero-main.jpg) no-repeat;
+    height: 200px;
+ }
+ 
+ .book-now {
+    background-color: #9a2018;
+    color: #fff;
+    font-size: 16px;
+    transition: background-color 500ms linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    transition:all 0.3s ease;
+    cursor: pointer;
+ }
+ 
+ .book-now:hover {
+    background-color: rgb(196, 28, 28);
+ }
+ 
+ #book-now-hero {
+    height: 67px;
+ }
+
+ #book-now-hero p a {
+   color: white;
+   cursor: pointer;
+}
+ 
+ #hero-heading-box {
+    align-self: end;
+ }
+ 
+ .hero-img-h2, .hero-img-h3 {
+    background: rgb(255, 255, 255);
+    padding: 10px 15px;
+    font-size: 14px;
+ }
+ 
+ .hero-img-h2 span,  .hero-img-h3 span {
+    color: #9a2018;
+    font-size: 12px;
+ }
+ 
+ .line-separator {
+    margin-top: 20px;
+    border-top: solid 3px #CF6666;
+    padding-top: 20px;
+ }
+ 
+ #hero-summary p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 20px;
+ }
+
+ input[type="checkbox"] {
+   display: inline;
+   margin: 5px;
+   
+ }
+ 
+ input[type="checkbox"]:checked + span::after {
+   content: "\2713";
+   width: 35px;
+   height: 35px;
+   font-size: 25px;
+   animation: fadeIn 0.7s;
+ }
+ 
+ @keyframes fadeIn {
+   from{opacity: 0;}
+   to{opacity: 1;}
+ }
+
+
+ /*4 Room Styles*/
+ #room-styles-nav {
+    padding-top: 20px;
+ }
+ 
+ #room-styles-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+ }
+ #room-styles-nav ul li {
+    margin-bottom: 15px;
+ }
+ 
+ #room-styles-nav ul li a {
+   color: inherit;
+   padding: 5px;
+ }
+
+ #room-styles-nav ul li a:hover {
+   color: #9a2018;
+ }
+ 
+ #room-styles-nav ul li a.selected {
+    border-left: #9a2018 solid 5px;
+  }
+ 
+ 
+ #room-styles-hero-con {
+   background: url(../images/rooms_mobile.jpg) no-repeat;
+   height: 195px;
+ }
+ 
+ #room-styles-heading-box {
+    align-self: end;
+ }
+
+ 
+ .room-styles-image {
+    float: left;
+    margin-right: 20px;
+    margin-top: 30px;
+ }
+ 
+ .room-styles-image-con h2 {
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+ }
+ 
+ .room-styles-image-con p {
+    font-size: 12px;
+    margin-bottom: 20px;
+    line-height: 20px;
+ }
+ 
+ .room-styles-con a {
+    color: #707070;
+    font-size: 12px;
+ }
+ 
+
+  #room-styles-bottom-nav {
+    background-color: #CF6666;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+ }
+ 
+ #room-styles-bottom-nav ol {
+    list-style-type: none;
+    margin: 0 0 0 20px;
+    padding: 0;
+ }
+ 
+ #room-styles-bottom-nav ol li {
+    display: inline;
+ }
+ 
+ #room-styles-bottom-nav ol li a {
+    padding: 5px;
+    color: #fff;
+ }
+ 
+ /*5 Chateaus*/
+
+ #chateau-hero-con {
+    background: url(../images/chateau_mobile.jpg) no-repeat;
+    height: 195px;
+ }
+ 
+ #chateau-hero-heading-box {
+    align-self: end;
+ }
+ 
+ #chateau-text {
+    padding-bottom: 60px;
+ }
+ 
+ #chateau-text p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 22px;
+ }
+ 
+ /*6 Villas*/
+
+ #villa-hero-con {
+    background: url(../images/villas_mobile.jpg) no-repeat;
+    height: 195px;
+ }
+ 
+ #villa-hero-heading-box {
+    align-self: end;
+ }
+ 
+ #villa-text {
+    padding-bottom: 60px;
+ }
+ 
+ #villa-text p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 22px;
+ }
+
+  /*7 Masters*/
+
+  #master-hero-con {
+    background: url(../images/masters_mobile.jpg) no-repeat;
+    height: 195px;
+ }
+ 
+ #master-hero-heading-box {
+    align-self: end;
+ }
+ 
+ #master-text {
+    padding-bottom: 60px;
+ }
+ 
+ #master-text p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 22px;
+ }
+
+  /*8 Exotics*/
+
+  #exotic-hero-con {
+    background: url(../images/exotic_mobile.jpg) no-repeat;
+    height: 195px;
+ }
+ 
+ #exotic-hero-heading-box {
+    align-self: end;
+ }
+ 
+ #exotic-text {
+    padding-bottom: 60px;
+ }
+ 
+ #exotic-text p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 22px;
+ }
+
+/*9 Chalets*/
+
+   #chalet-hero-con {
+    background: url(../images/chalets_mobile.jpg) no-repeat;
+    height: 195px;
+ }
+ 
+ #chalet-hero-heading-box {
+    align-self: end;
+ }
+ 
+ #chalet-text {
+    padding-bottom: 60px;
+ }
+ 
+ #chalet-text p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 22px;
+ }
+ 
+ /*10 Juniors*/
+
+ #junior-hero-con {
+    background: url(../images/junior_mobile.jpg) no-repeat;
+    height: 195px;
+ }
+ 
+ #junior-hero-heading-box {
+    align-self: end;
+ }
+ 
+ #junior-text {
+    padding-bottom: 60px;
+ }
+ 
+ #junior-text p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 22px;
+ }
+
+ /* 11 ---Footer--- */
+
+#footer-hero {
+    background-image: url(../images/footer_mobile.jpg);
+     background-repeat: no-repeat;
+    color: #fff;
+    font-size: 12px;
+    padding-bottom: 80px;
+ }
+ 
+ #footer-hero h3 {
+    margin-top: 30px;
+    font-size: 28px;
+    margin-bottom: 16px;
+ }
+ 
+ #footer-privacy .line-seperator {
+    margin-top: 0px;
+ }
+ 
+ #footer-contact-info h3 {
+    font-size: 23px;
+ }
+ 
+ #footer-contact-info p {
+    margin-bottom: 20px;
+    line-height: 18px;
+    font-size: 11px;
+ }
+
+ #footer-contact-info p a {
+   color: white;
+ }
+ 
+ #footer-contact-info p a:hover {
+   color: #9a2018;
+ }
+
+
+
+
+/*Lightbox*/
+
+#book {
+   background: url(../images/booknow.jpg) no-repeat;
+   height: 200px;
+}
+
+.lightbox {
+   width: 412px;
+   height: 6245px;
+   margin: 20px auto;
+   display: none;
+   border-radius: 10px;
+
+}
+
+#lightbox-booknow {
+   background-color: white;
+   padding: 0px;
+   position: absolute;
+   top: 0;
+
+   text-decoration: none;
+    transition: all .5s ease-in-out;
+}
+
+
+
+.lightbox_close {
+   float: right;
+   color: #707070;
+   font-size: 36px;
+
+   text-decoration: none;
+   font-weight: bolder;
+   transition: all .5s ease-in-out;
+}
+
+.lightbox_close:hover {
+   opacity: 0.5;
+   color: red;
+   
+}
+
+
+.lightbox:target {
+   display: block;
+}
+
+#book-now-form form {
+   display: flex;
+   flex-direction: column;
+}
+
+#book-now-form input, textarea {
+   padding: 22px;
+   border: 2px solid #d6d6d6;
+   background-color: #f7f7f7;
+   border-radius: 5px;
+   margin-bottom: 30px;
+   font: inherit;
+   width: auto;
+}
+
+#book-now-form textarea {
+   height: 100px;
+}
+
+
+
+#book-now-form input[type="submit"] {
+   padding: 12px 28px;
+   background: #9a2018;
+   color: #fff;
+   border: none;
+   transition: all 200ms ease-in;
+   width: 150px;
+   align-self: flex-end;
+   cursor: pointer;
+}
+
+#book-now-form input[type="submit"]:hover {
+   background-color: #9a2018;
+   border-radius: 0;
+   animation: book-now 0.3s ease-in forwards;
+}
+
+
+#main-nav1 label img{
+   width: 20px;
+   height: 20px;
+   margin-top: 15px;
+   cursor: pointer;
+   transition: all .5s ease;
+   margin-bottom: 20px; 
+} 
+
+
+
+#main-nav1 input, #burger-con1 {
+   display: none;
+}
+
+#main-nav1 input:checked ~ #burger-con1 {
+   display: block;
+}
+
+#main-nav1 input:checked ~ label img {
+   transform: rotate(90deg);
+}
+
+
+#main-nav1 ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+#main-nav1 ul li a {
+   display: block;
+   padding: 10px 0 10px 0;
+   text-align: center;
+   color: #626262;
+}
+
+#main-nav1 ul li {
+   border-bottom: 1px solid #efefef;
+}
+
+.book-now {
+   background-color: #9a2018;
+   color: #fff;
+   font-size: 16px;
+   transition: background-color 500ms linear;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-style: italic;
+   cursor: pointer;
+}
+
+.book-now:hover {
+   animation: book-now 0.3s ease-in forwards;
+}
+
+@keyframes book-now {
+   from {
+      background-color: #9a2018;
+    }
+    to {
+      background-color: rgb(196,28,28);
+    }
+}
+
+
+#main-nav1 ul li:first-child {
+   border-top: 1px solid #efefef;
+}
+
+#main-nav1 ul li:last-child {
+   margin-bottom: 10px;
+} 
+
+#hero-summary1 p {
+   font-size: 14px;
+   line-height: 22px;
+   margin-bottom: 20px;
+}
+
+
+#logo1 {
+   margin-bottom: 20px;
+   max-width: 382px;
+}
+
+
+
+#hero1 {
+   background: url(../images/hero-main.jpg) no-repeat;
+   height: 200px;
+}
+
+
+#book-now-hero1 {
+   height: 67px;
+}
+
+#hero-heading-box1 {
+   align-self: end;
+}
+
+/*Scrolling*/
+
+#scroll-to-top-btn {
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   width: 412px;
+   float: inline-end;
+   position: fixed;
+   top: 680px;
+}
+
+#scroll-to-top-btn a {
+   text-decoration: none;
+   color: #fff;
+}
+
+
+/* Show the button when scrolling down */
+#content:target ~ #scroll-to-top-btn {
+   display: block;
+}
+
+.fa-caret-square-up {
+   color: #626262;
+   transition: 0.6s ease-in;
+   margin-right: 20px;
+}
+
+.fa-caret-square-up:hover {
+   color: #9a2018;
+}
+
+.fas {
+   font-size: 42px;
+   margin: 0 auto;
+   float: left;
+}
+
+
